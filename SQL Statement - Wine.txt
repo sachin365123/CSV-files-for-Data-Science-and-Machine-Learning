@@ -1,0 +1,7 @@
+SELECT *,  
+CASE  
+WHEN quality < '5' THEN 'Low'   
+WHEN quality < '7' THEN 'Average'   
+ELSE 'High'  
+END AS WineCategory  
+FROM t1;  
